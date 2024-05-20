@@ -69,6 +69,14 @@
 				margin: 15px auto 15px;
 			}
 
+			.photos img {
+				width: 300px;
+				height: 400px;
+				object-fit: cover;
+				display: block;
+				margin: 15px auto 15px;
+			}
+
 			.hearts {
 				display: flex;
 				justify-content: center;
@@ -125,6 +133,21 @@
 				background: #87ceeb;
 			}
 
+			#showImage {
+				background-color: #ff6f61;
+				color: white;
+				margin-bottom: 20px;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+			}
+
+			#showImage:hover {
+				background-color: #ff4c3b;
+			}
+
 			@keyframes float {
 				0%,
 				100% {
@@ -138,6 +161,19 @@
 	</head>
 	<body>
 		<div class="container">
+			<div class="card">
+				<img src="img/sticker4.png" alt="Sticker 4" />
+				<h1>Hi, Play Me!</h1>
+				<p>
+					Me sing for you so that you're not bored scrolling :D, I
+					like to sing more cause now my favorite person loves my
+					voice.
+				</p>
+				<audio class="song" controls>
+					<source src="song.mp3" type="audio/mpeg" />
+					Browser Anda tidak mendukung elemen audio.
+				</audio>
+			</div>
 			<div class="card">
 				<img src="img/sticker1.png" alt="Sticker 1" />
 				<h1>Happy 2nd Monthversarry!</h1>
@@ -162,22 +198,40 @@
 				</div>
 			</div>
 			<div class="card">
-				<img src="img/sticker4.png" alt="Sticker 4" />
-				<h1>Play Me!</h1>
-				<p>
-					Me sing for you so that you're not bored scrolling :D, I
-					like to sing more cause now my favorite person loves my
-					voice.
-				</p>
-				<audio class="song" controls>
-					<source src="song.mp3" type="audio/mpeg" />
-					Browser Anda tidak mendukung elemen audio.
-				</audio>
-			</div>
-			<div class="card">
 				<img src="img/sticker3.png" alt="Sticker 3" />
-				<h1>Open Me!</h1>
+				<h1>Memories...</h1>
+				<p>
+					Remember our first date? Me with a ton of nerveous.
+					<br />Anything with you, is beautiful. So let us make more!
+				</p>
+				<button id="showImage">Open Me!</button>
+				<div class="photos" style="display: none">
+					<img src="img/photo1.jpeg" alt="Foto 1" />
+					<img src="img/photo2.jpeg" alt="Foto 2" />
+					<img src="img/photo3.jpeg" alt="Foto 3" />
+					<img src="img/photo4.jpeg" alt="Foto 4" />
+					<img src="img/photo5.jpeg" alt="Foto 5" />
+					<img src="img/photo6.jpeg" alt="Foto 6" />
+					<img src="img/photo7.jpeg" alt="Foto 7" />
+					<img src="img/photo8.jpeg" alt="Foto 8" />
+					<img src="img/photo9.jpeg" alt="Foto 9" />
+					<img src="img/photo10.jpeg" alt="Foto 10" />
+					<img src="img/photo11.jpeg" alt="Foto 11" />
+					<img src="img/photo12.jpeg" alt="Foto 12" />
+					<img src="img/photo13.jpeg" alt="Foto 13" />
+					<img src="img/photo14.jpeg" alt="Foto 14" />
+					<img src="img/photo15.jpeg" alt="Foto 15" />
+					<img src="img/photo16.jpeg" alt="Foto 16" />
+				</div>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		document
+			.getElementById("showImage")
+			.addEventListener("click", function () {
+				document.querySelector(".photos").style.display = "block";
+			});
+	</script>
 </html>
