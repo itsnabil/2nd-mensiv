@@ -38,10 +38,10 @@
 
 			.card {
 				background: white;
-				padding: 25px;
+				padding: 12px;
 				border-radius: 20px;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-				max-width: 320px;
+				max-width: 280px;
 				margin: auto;
 				margin-bottom: 15px;
 				margin-top: 15px;
@@ -49,14 +49,14 @@
 
 			h1 {
 				font-family: "Dancing Script", cursive;
-				font-size: 3.2em;
+				font-size: 2.9em;
 				color: #ff6f61;
 				margin-bottom: 40px;
 			}
 
 			p {
 				font-family: "Poppins", sans-serif;
-				font-size: 1em;
+				font-size: 0.8em;
 				color: #333;
 				margin-bottom: 40px;
 			}
@@ -70,11 +70,12 @@
 			}
 
 			.photos img {
-				width: 300px;
-				height: 400px;
+				width: 280px;
+				height: 380px;
 				object-fit: cover;
 				display: block;
-				margin: 15px auto 15px;
+				margin: 15px auto 5px;
+				border-radius: 20px;
 			}
 
 			.hearts {
@@ -84,11 +85,11 @@
 			}
 
 			.heart {
-				width: 50px;
-				height: 50px;
+				width: 35px;
+				height: 35px;
 				background-color: #ff6f61;
 				position: relative;
-				margin: 60px 30px;
+				margin: 50px 25px;
 				transform: rotate(-45deg);
 				animation: float 4s ease-in-out infinite;
 			}
@@ -96,10 +97,10 @@
 			.heart:before,
 			.heart:after {
 				content: "";
-				width: 50px;
-				height: 50px;
+				width: 35px;
+				height: 35px;
 				background-color: #ff6f61;
-				border-radius: 50%;
+				border-radius: 39%;
 				position: absolute;
 			}
 
@@ -169,7 +170,7 @@
 					like to sing more cause now my favorite person loves my
 					voice.
 				</p>
-				<audio class="song" controls>
+				<audio class="song" controls style="width: 250px">
 					<source src="song.mp3" type="audio/mpeg" />
 					Browser Anda tidak mendukung elemen audio.
 				</audio>
