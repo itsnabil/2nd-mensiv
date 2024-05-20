@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ucapan Selamat Ulang Tahun</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background: #7b3f00;
+				font-family: "Poppins", sans-serif;
+			}
+
+			.container {
+				text-align: center;
+				padding: 20px;
+				width: 100%;
+				max-height: 100vh;
+			}
+
+			.song {
+				margin-bottom: 40px;
+			}
+
+			.card {
+				background: white;
+				padding: 25px;
+				border-radius: 20px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				max-width: 320px;
+				margin: auto;
+				margin-bottom: 15px;
+				margin-top: 15px;
+			}
+
+			h1 {
+				font-family: "Dancing Script", cursive;
+				font-size: 3.2em;
+				color: #ff6f61;
+				margin-bottom: 40px;
+			}
+
+			p {
+				font-family: "Poppins", sans-serif;
+				font-size: 1em;
+				color: #333;
+				margin-bottom: 40px;
+			}
+
+			.card img {
+				width: 150px;
+				height: 200px;
+				object-fit: cover;
+				display: block;
+				margin: 15px auto 15px;
+			}
+
+			.hearts {
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
+			}
+
+			.heart {
+				width: 50px;
+				height: 50px;
+				background-color: #ff6f61;
+				position: relative;
+				margin: 60px 30px;
+				transform: rotate(-45deg);
+				animation: float 4s ease-in-out infinite;
+			}
+
+			.heart:before,
+			.heart:after {
+				content: "";
+				width: 50px;
+				height: 50px;
+				background-color: #ff6f61;
+				border-radius: 50%;
+				position: absolute;
+			}
+
+			.heart:before {
+				top: -25px;
+				left: 0;
+			}
+
+			.heart:after {
+				left: 25px;
+				top: 0;
+			}
+
+			.heart:nth-child(2) {
+				background: #ffdd67;
+				animation-delay: 2s;
+			}
+
+			.heart:nth-child(2):before,
+			.heart:nth-child(2):after {
+				background: #ffdd67;
+			}
+
+			.heart:nth-child(3) {
+				background: #87ceeb;
+				animation-delay: 4s;
+			}
+
+			.heart:nth-child(3):before,
+			.heart:nth-child(3):after {
+				background: #87ceeb;
+			}
+
+			@keyframes float {
+				0%,
+				100% {
+					transform: translateY(0) rotate(-45deg);
+				}
+				50% {
+					transform: translateY(-20px) rotate(-45deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+				<img src="img/sticker1.png" alt="Sticker 1" />
+				<h1>Happy 2nd Monthversarry!</h1>
+				<p>
+					Congratulations on our second mensiv! Having You as my love
+					has always been a gift to me. I mean, look at the picture
+					above, we look so happy.
+					<br /><br />
+					Whatever would happen in the future, I'm not giving up on
+					you, you're worth it. I'm gonna treat You the way You
+					deserve and learn how to love You right. And I'm not going
+					anywhere.
+					<br /><br />
+					I know You would do the same, but you know me that I'm an
+					Overthinker, so when you read this and feel the same...
+				</p>
+				<h1>Tell Me! :D</h1>
+				<div class="hearts">
+					<div class="heart"></div>
+					<div class="heart"></div>
+					<div class="heart"></div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="img/sticker4.png" alt="Sticker 4" />
+				<h1>Play Me!</h1>
+				<p>
+					Me sing for you so that you're not bored scrolling :D, I
+					like to sing more cause now my favorite person loves my
+					voice.
+				</p>
+				<audio class="song" controls>
+					<source src="song.mp3" type="audio/mpeg" />
+					Browser Anda tidak mendukung elemen audio.
+				</audio>
+			</div>
+			<div class="card">
+				<img src="img/sticker3.png" alt="Sticker 3" />
+				<h1>Open Me!</h1>
+			</div>
+		</div>
+	</body>
+</html>
