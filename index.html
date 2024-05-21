@@ -21,11 +21,18 @@
 				justify-content: center;
 				align-items: center;
 				height: 100vh;
-				background: #7b3f00;
+				background: #dac0a3;
 				font-family: "Poppins", sans-serif;
 			}
 
 			.container {
+				text-align: center;
+				padding: 20px;
+				width: 100%;
+				max-height: 100vh;
+			}
+
+			.header {
 				text-align: center;
 				padding: 20px;
 				width: 100%;
@@ -37,7 +44,7 @@
 			}
 
 			.card {
-				background: white;
+				background: #fefaf6;
 				padding: 12px;
 				border-radius: 20px;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,7 +57,7 @@
 			h1 {
 				font-family: "Dancing Script", cursive;
 				font-size: 2.9em;
-				color: #ff6f61;
+				color: #65350f;
 				margin-bottom: 40px;
 			}
 
@@ -63,6 +70,14 @@
 
 			.card img {
 				width: 150px;
+				height: 200px;
+				object-fit: cover;
+				display: block;
+				margin: 15px auto 15px;
+			}
+
+			.header img {
+				width: 600px;
 				height: 200px;
 				object-fit: cover;
 				display: block;
@@ -135,7 +150,8 @@
 			}
 
 			#showImage {
-				background-color: #ff6f61;
+				font-family: "Dancing Script", cursive;
+				background-color: #65350f;
 				color: white;
 				margin-bottom: 20px;
 				padding: 10px 20px;
@@ -146,7 +162,7 @@
 			}
 
 			#showImage:hover {
-				background-color: #ff4c3b;
+				background-color: #231709;
 			}
 
 			@keyframes float {
@@ -162,6 +178,9 @@
 	</head>
 	<body>
 		<div class="container">
+			<!-- <div class="header">
+				<img src="img/header.png" alt="Header" />
+			</div> -->
 			<div class="card">
 				<img src="img/sticker4.png" alt="Sticker 4" />
 				<h1>Hi, Play Me!</h1>
@@ -205,7 +224,7 @@
 					Remember our first date? Me with a ton of nerveous.
 					<br />Anything with you, is beautiful. So let us make more!
 				</p>
-				<button id="showImage">Open Me!</button>
+				<button id="showImage">Open Me &ThinSpace; <3</button>
 				<div class="photos" style="display: none">
 					<img src="img/photo1.jpeg" alt="Foto 1" />
 					<img src="img/photo2.jpeg" alt="Foto 2" />
